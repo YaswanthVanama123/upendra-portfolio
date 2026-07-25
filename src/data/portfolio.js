@@ -11,6 +11,7 @@ export const profile = {
   email: 'morampudinagaupendra@gmail.com',
   phone: '+1 201-205-9170',
   location: 'Wilmington, DE, USA',
+  photo: '/profile.jpg',
   resumeUrl: '/resume.pdf',
   socials: {
     github: '',

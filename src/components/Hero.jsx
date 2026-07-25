@@ -45,25 +45,8 @@ export default function Hero() {
         </Reveal>
 
         <Reveal className="hero__visual">
-          <div className="code-card">
-            <div className="code-card__bar">
-              <span></span>
-              <span></span>
-              <span></span>
-              <p className="code-card__file">developer.js</p>
-            </div>
-            <pre className="code-card__body">
-              <code>
-                <span className="tok-key">const</span> <span className="tok-var">developer</span> = {'{'}
-                {'\n'}  <span className="tok-prop">name</span>:{' '}
-                <span className="tok-str">"{profile.shortName}"</span>,{'\n'}  <span className="tok-prop">role</span>:{' '}
-                <span className="tok-str">"{profile.role}"</span>,{'\n'}  <span className="tok-prop">stacks</span>: [
-                <span className="tok-str">"MERN"</span>, <span className="tok-str">"PERN"</span>],{'\n'}{'  '}
-                <span className="tok-prop">focus</span>: <span className="tok-str">"scalable web apps"</span>,{'\n'}{'  '}
-                <span className="tok-prop">available</span>: <span className="tok-bool">true</span>,{'\n'}
-                {'}'};
-              </code>
-            </pre>
+          <div className="hero__photo">
+            <img src={profile.photo} alt={profile.name} width="440" height="440" loading="eager" />
           </div>
         </Reveal>
       </div>
