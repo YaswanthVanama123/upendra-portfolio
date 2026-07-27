@@ -478,6 +478,20 @@ button { font-family: inherit; }
 .detail__stack li:last-child { border-bottom: 0; padding-bottom: 0; }
 .detail__stack-tech { font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent); }
 .detail__stack-detail { color: var(--text-dim); }
+.detail__repos { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.detail__repos a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.detail__repos a:hover { border-color: var(--accent); transform: translateY(-2px); }
+.detail__repo-label { font-weight: 600; font-size: 0.92rem; color: var(--text); }
+.detail__repo-path { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-faint); }
 .detail__challenges { display: grid; gap: 18px; }
 .challenge {
   background: var(--bg-alt);

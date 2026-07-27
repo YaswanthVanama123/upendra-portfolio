@@ -172,6 +172,12 @@ export const projects = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     codeUrl: null,
     liveUrl: null,
+    repos: [
+      { label: 'User App', url: 'https://github.com/upendramorampudi/food-user' },
+      { label: 'Admin Dashboard', url: 'https://github.com/upendramorampudi/food-admin' },
+      { label: 'Super Admin Console', url: 'https://github.com/upendramorampudi/food-superadmin' },
+      { label: 'Backend API', url: 'https://github.com/upendramorampudi/food-backend' },
+    ],
     features: [
       'Three role-based dashboards — User, Admin, and Super Admin',
       'Users browse menus, add to cart, checkout, and track orders',
@@ -216,13 +222,74 @@ export const projects = [
     ],
   },
   {
+    title: 'E-Commerce Platform',
+    slug: 'ecommerce-platform',
+    context: 'Personal Project',
+    description:
+      'A full-stack, role-based e-commerce platform split into dedicated apps — a customer storefront, an admin dashboard, and a super-admin console — all powered by a shared Node.js/Express REST API. Customers browse products, manage a cart, and check out; admins manage products, categories, and orders; super admins oversee the whole platform and manage admins and users. Secured end to end with JWT authentication and role-based access control.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    codeUrl: null,
+    liveUrl: null,
+    repos: [
+      { label: 'Customer Storefront', url: 'https://github.com/upendramorampudi/ecommerce-user' },
+      { label: 'Admin Dashboard', url: 'https://github.com/upendramorampudi/ecommerce-admin' },
+      { label: 'Super Admin Console', url: 'https://github.com/upendramorampudi/ecommerce-superadmin' },
+      { label: 'Backend API', url: 'https://github.com/upendramorampudi/ecommerce-backend' },
+    ],
+    features: [
+      'Separate apps for Customer, Admin, and Super Admin — each a focused React frontend',
+      'Product catalog with categories, search, and product detail pages',
+      'Shopping cart, checkout, and order management',
+      'Admin tools to manage products, categories, inventory, and orders',
+      'Super Admin console to oversee the platform and manage admins and users',
+      'JWT authentication with role-based access control across all apps',
+    ],
+    stackUsage: [
+      {
+        tech: 'React.js',
+        detail:
+          'Three independent React frontends (customer storefront, admin, and super admin) sharing UI patterns and consuming one API.',
+      },
+      {
+        tech: 'Node.js / Express',
+        detail:
+          'A single REST API serving products, carts, orders, and users, with role-based middleware protecting every route.',
+      },
+      {
+        tech: 'MongoDB',
+        detail: 'Document storage for products, categories, carts, orders, and users.',
+      },
+      {
+        tech: 'JWT',
+        detail: 'Stateless authentication and per-role authorization shared across the customer, admin, and super-admin apps.',
+      },
+    ],
+    challenges: [
+      {
+        problem: 'Three separate frontends had to stay in sync with one backend contract.',
+        solution:
+          'Centralized business logic and validation in the Express API and kept a consistent REST contract so every app consumed the same endpoints.',
+      },
+      {
+        problem: 'Different roles needed very different capabilities without exposing privileged actions.',
+        solution:
+          'Enforced role-based access control with JWT and Express middleware, and split the UIs so each role only ships the screens it needs.',
+      },
+      {
+        problem: 'Cart and order integrity had to hold across sessions and users.',
+        solution:
+          'Validated cart contents and recomputed totals server-side before placing an order, backed by clear order states.',
+      },
+    ],
+  },
+  {
     title: 'Payment Ledger & Expense Tracker',
     slug: 'payment-ledger',
     context: 'Personal Project',
     description:
       'A payment ledger application to record and track all expenses and transactions with categorized reporting and summaries. Built on a relational data model for accurate, ACID-compliant financial records — a natural fit for the PERN stack with PostgreSQL handling transactional integrity.',
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL'],
-    codeUrl: null,
+    codeUrl: 'https://github.com/upendramorampudi/account-expenses',
     liveUrl: 'https://account-expenses.onrender.com/',
     features: [
       'Record income and expense transactions with categories',
