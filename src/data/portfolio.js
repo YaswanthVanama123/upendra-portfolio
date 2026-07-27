@@ -14,7 +14,7 @@ export const profile = {
   photo: '/profile.jpg',
   resumeUrl: '/resume.pdf',
   socials: {
-    github: '',
+    github: 'https://github.com/upendramorampudi',
     linkedin: 'https://www.linkedin.com/in/naga-upendra-morampudi-b6663417a',
   },
 }
@@ -99,14 +99,14 @@ export const projects = [
   {
     title: 'Common Provider Master — Healthcare Platform',
     slug: 'common-provider-master',
-    context: 'HCL Technologies · Client: Kaiser Permanente',
+    context: 'HCL Technologies · Client: Kaiser Permanente USA',
     description:
-      'An enterprise healthcare platform that collects, consolidates, and maintains provider (doctor) information from multiple Kaiser Permanente applications into a single centralized source — provider profiles, specialties, practice locations, appointment availability, scheduling, and insurance data. I built responsive React components and RESTful Node.js/Express services, integrated multiple source applications, and worked across MongoDB and PostgreSQL to power accurate provider search and appointment booking.',
+      'An enterprise healthcare platform that collects, consolidates, and maintains provider (doctor) information from multiple Kaiser Permanente USA applications into a single centralized source — provider profiles, specialties, practice locations, appointment availability, scheduling, and insurance data. I built responsive React components and RESTful Node.js/Express services, integrated multiple source applications, and worked across MongoDB and PostgreSQL to power accurate provider search and appointment booking.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'AWS'],
     codeUrl: null,
     liveUrl: null,
     features: [
-      'Centralized master record consolidating provider data from multiple Kaiser Permanente source applications',
+      'Centralized master record consolidating provider data from multiple Kaiser Permanente USA source applications',
       'Provider profiles with specialties, practice locations, and contact details',
       'Appointment availability, scheduling, and available time-slot management',
       'Insurance-related data tied to each provider',
@@ -223,7 +223,7 @@ export const projects = [
       'A payment ledger application to record and track all expenses and transactions with categorized reporting and summaries. Built on a relational data model for accurate, ACID-compliant financial records — a natural fit for the PERN stack with PostgreSQL handling transactional integrity.',
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL'],
     codeUrl: null,
-    liveUrl: null,
+    liveUrl: 'https://account-expenses.onrender.com/',
     features: [
       'Record income and expense transactions with categories',
       'Categorized reporting, summaries, and running balances',
@@ -268,9 +268,9 @@ export const timeline = [
   {
     date: '03/2022 — 12/2024',
     title: 'Full Stack Developer',
-    org: 'HCL Technologies (Client: Kaiser Permanente)',
+    org: 'HCL Technologies (Client: Kaiser Permanente USA)',
     description:
-      'Built and maintained Common Provider Master — a MERN-based enterprise healthcare platform that consolidates provider data across multiple Kaiser Permanente applications. Developed reusable React components and RESTful Node.js/Express services, worked across MongoDB and PostgreSQL, and deployed via AWS, Docker, and CI/CD pipelines in an Agile/Scrum team. Performed unit, API, integration, and automation testing to ensure quality and data accuracy.',
+      'Built and maintained Common Provider Master — a MERN-based enterprise healthcare platform that consolidates provider data across multiple Kaiser Permanente USA applications. Developed reusable React components and RESTful Node.js/Express services, worked across MongoDB and PostgreSQL, and deployed via AWS, Docker, and CI/CD pipelines in an Agile/Scrum team. Performed unit, API, integration, and automation testing to ensure quality and data accuracy.',
   },
   {
     date: '01/2025 — 08/2026',
