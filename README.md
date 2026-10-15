@@ -1,14 +1,14 @@
 # Morampudi Naga Upendra — Portfolio
 
-A modern, responsive portfolio website built with **React + Vite**, highlighting
-full-stack development across the **MERN** (MongoDB, Express, React, Node) and
-**PERN** (PostgreSQL, Express, React, Node) stacks.
+A modern, responsive portfolio website built with **React + Vite**, presenting
+Java full-stack development — **Core Java, J2EE & Spring** on the backend and
+**React** on the frontend.
 
 ## Tech Stack
 
 - ⚛️ **React 18** — component-based UI
 - ⚡ **Vite** — fast dev server & build
-- 🎨 Plain CSS (custom properties, no framework) — dark theme, MERN/PERN accents
+- 🎨 Plain CSS (custom properties, no framework) — dark theme, green/blue accents
 - 📱 Fully responsive + accessible (respects `prefers-reduced-motion`)
 
 ## Getting Started
@@ -39,7 +39,7 @@ Open it and replace the placeholder values:
 | Email & social links    | `profile.email`, `profile.socials` |
 | Resume download link     | `profile.resumeUrl`             |
 | Bio & stats             | `about`                         |
-| MERN / PERN breakdown   | `stacks`                        |
+| Stack cards             | `stacks`                        |
 | Skill chips             | `skillGroups`                   |
 | Projects                | `projects`                      |
 | Experience & education  | `timeline`                      |

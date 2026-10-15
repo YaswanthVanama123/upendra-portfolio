@@ -9,7 +9,8 @@ export default function Skills() {
           <span className="section__num">02.</span> Skills &amp; Stack
         </h2>
         <p className="section__lead">
-          My two primary stacks share a React + Node core — I switch the database layer to fit the problem.
+          Backend-first: Core Java, J2EE, and Spring for services, Kafka and MQ for integration, Oracle and Cassandra
+          for data — with React when a feature needs a UI.
         </p>
 
         <div className="stacks">
@@ -21,11 +22,10 @@ export default function Skills() {
               </div>
               <ul className="stack-card__list">
                 {stack.items.map((item) => (
-                  <li key={item.letter + item.name}>
+                  <li key={item.name}>
                     <span className="dot"></span>
                     <span>
-                      <strong>{item.letter}</strong>
-                      {item.name} — {item.note}
+                      <strong>{item.name}</strong> — {item.note}
                     </span>
                   </li>
                 ))}

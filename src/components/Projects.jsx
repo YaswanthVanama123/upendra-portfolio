@@ -10,8 +10,8 @@ export default function Projects() {
           <span className="section__num">03.</span> Featured Projects
         </h2>
         <p className="section__lead">
-          Enterprise and personal full-stack applications across the MERN &amp; PERN stacks.
-          Open a case study for a deep dive into the tech stack and the problems solved.
+          Enterprise and personal applications built with Core Java, Spring Boot, and React — from Kafka and MQ
+          integrations to secure REST APIs. Open a case study for a deep dive into the tech stack and the problems solved.
         </p>
 
         <div className="projects">
@@ -31,11 +31,6 @@ export default function Projects() {
                   </div>
 
                   <div className="project-card__links">
-                    {project.codeUrl && (
-                      <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                        Code
-                      </a>
-                    )}
                     {project.liveUrl && (
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         Live

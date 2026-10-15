@@ -43,39 +43,16 @@ export default function ProjectDetail() {
             ))}
           </ul>
 
-          {(project.codeUrl || project.liveUrl) && (
+          {project.liveUrl && (
             <div className="detail__links">
-              {project.codeUrl && (
-                <a href={project.codeUrl} className="btn btn--ghost" target="_blank" rel="noopener noreferrer">
-                  View Code
-                </a>
-              )}
-              {project.liveUrl && (
-                <a href={project.liveUrl} className="btn btn--primary" target="_blank" rel="noopener noreferrer">
-                  Live Demo
-                </a>
-              )}
+              <a href={project.liveUrl} className="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                Live Demo
+              </a>
             </div>
           )}
         </header>
 
         <p className="detail__overview">{project.description}</p>
-
-        {project.repos?.length > 0 && (
-          <section className="detail__section">
-            <h2 className="detail__section-title">Repositories</h2>
-            <ul className="detail__repos">
-              {project.repos.map((r) => (
-                <li key={r.url}>
-                  <a href={r.url} target="_blank" rel="noopener noreferrer">
-                    <span className="detail__repo-label">{r.label}</span>
-                    <span className="detail__repo-path">{r.url.replace('https://github.com/', '')}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
 
         {project.features?.length > 0 && (
           <section className="detail__section">

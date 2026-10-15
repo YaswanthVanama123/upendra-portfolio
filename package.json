@@ -2,7 +2,7 @@
   "name": "naga-upendra-portfolio",
   "private": true,
   "version": "1.0.0",
-  "description": "Portfolio website for Morampudi Naga Upendra — Full Stack Developer (MERN & PERN)",
+  "description": "Portfolio website for Morampudi Naga Upendra — Java Full Stack Developer (Core Java, Spring & React)",
   "type": "module",
   "scripts": {
     "dev": "vite",

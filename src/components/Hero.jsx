@@ -24,13 +24,6 @@ export default function Hero() {
           </div>
 
           <ul className="hero__socials">
-            {profile.socials.github && (
-              <li>
-                <a href={profile.socials.github} target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
-              </li>
-            )}
             {profile.socials.linkedin && (
               <li>
                 <a href={profile.socials.linkedin} target="_blank" rel="noopener noreferrer">
