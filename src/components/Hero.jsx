@@ -18,9 +18,11 @@ export default function Hero() {
             <a href="#projects" className="btn btn--primary">
               View My Work
             </a>
-            <a href={profile.resumeUrl} className="btn btn--ghost" download>
-              Download Resume
-            </a>
+            {profile.resumeUrl && (
+              <a href={profile.resumeUrl} className="btn btn--ghost" download>
+                Download Resume
+              </a>
+            )}
           </div>
 
           <ul className="hero__socials">

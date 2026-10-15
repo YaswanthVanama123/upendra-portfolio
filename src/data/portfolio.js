@@ -12,7 +12,7 @@ export const profile = {
   phone: '+1 201-205-9170',
   location: 'Wilmington, DE, USA',
   photo: '/profile.jpg',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: null,
   socials: {
     linkedin: 'https://www.linkedin.com/in/naga-upendra-morampudi-b6663417a',
   },
